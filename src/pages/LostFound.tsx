@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "../supabaseClient";
 
@@ -15,7 +15,6 @@ interface LostItem {
 function LostFound() {
     const [items, setItems] = useState<LostItem[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
-    const [user, setUser] = useState<any>(null);
     const [filterCategory, setFilterCategory] = useState<string>("");
     const [filterPlace, setFilterPlace] = useState<string>("");
     const navigate = useNavigate();
@@ -42,8 +41,6 @@ function LostFound() {
         const { data, error } = await supabase.auth.getSession();
         if (!data.session || error) {
             navigate('/login');
-        } else {
-            setUser(data.session.user);
         }
     };
 
