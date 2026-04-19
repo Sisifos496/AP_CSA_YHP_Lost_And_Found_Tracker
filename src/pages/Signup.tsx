@@ -33,7 +33,7 @@ function Signup() {
                     <div className="flex justify-center md:text-[70px] text-[20px] pt-[7%]">
                         <p className="tracking-[10px]">Sign-Up</p>
                     </div>
-                    // Signup form with email and password fields
+                    {/* Signup form with email and password fields */}
                     <form onSubmit={handleSignup} className="flex flex-col justify-center md:text-[20px] text-[15x]">
                         <div className="flex flex-col pt-[7%] gap-[5%]">
                             <div className="text-center"><p>Email</p></div>
@@ -47,7 +47,7 @@ function Signup() {
                                 />
                             </div>
                         </div>
-                        // Password input field
+                        {/* Password input field */}
                         <div className="flex flex-col pt-[7%] gap-[5%]">
                             <div className="text-center"><p>Password</p></div>
                             <div className="flex justify-center pt-[1%]">
@@ -60,7 +60,7 @@ function Signup() {
                                 />
                             </div>
                         </div>
-                        // Submit button for signup
+                        {/* Submit button for signup */}
                         <div className="flex flex-row justify-center pt-[7%]">
                             <button 
                                 type="submit"

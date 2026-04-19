@@ -34,7 +34,7 @@ function Login() {
                     <div className="flex justify-center md:text-[70px] text-[20px] pt-[7%]">
                         <p className="tracking-[10px]">Login</p>
                     </div>
-                    // Login form with email and password fields
+                    {/* Login form with email and password fields */}
                     <form onSubmit={handleLogin} className="flex flex-col justify-center md:text-[20px] text-[15x]">
                         <div className="flex flex-col pt-[7%] gap-[5%]">
                             <div className="text-center"><p>Email</p></div>
@@ -48,7 +48,7 @@ function Login() {
                                 />
                             </div>
                         </div>
-                        // Password input field
+                        {/* Password input field */}
                         <div className="flex flex-col pt-[7%] gap-[5%]">
                             <div className="text-center"><p>Password</p></div>
                             <div className="flex justify-center pt-[1%]">
@@ -61,7 +61,7 @@ function Login() {
                                 />
                             </div>
                         </div>
-                        // Submit button for login
+                        {/* Submit button for login */}
                         <div className="flex flex-row justify-center pt-[7%]">
                             <button 
                                 type="submit"

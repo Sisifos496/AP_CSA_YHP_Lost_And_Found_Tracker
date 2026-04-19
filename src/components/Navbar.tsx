@@ -18,12 +18,12 @@ function Navbar() {
 
     return (
         <nav className="fixed left-0 top-0 h-screen w-64 bg-[#3d348b] text-[#e6e2c5] shadow-lg flex flex-col">
-            <div className="flex-1 flex flex-col gap-2 p-4 items-center justify-center">
+            <div className="flex-1 flex flex-col gap-2 p-4">
                 {navItems.map((item) => (
                     <Link
                         key={item.path}
                         to={item.path}
-                        className={`w-full px-4 py-3 rounded-lg transition-colors duration-200 font-semibold text-center ${
+                        className={`px-4 py-3 rounded-lg transition-colors duration-200 font-semibold ${
                             isActive(item.path)
                                 ? 'bg-[#e6e2c5] text-[#3d348b]'
                                 : 'text-[#e6e2c5] hover:bg-[#2b4593]'
