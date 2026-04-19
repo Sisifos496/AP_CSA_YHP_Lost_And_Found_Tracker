@@ -10,9 +10,11 @@ import LostFound from './pages/LostFound.tsx'
 import Admin from './pages/Admin.tsx'
 import Layout from './components/Layout.tsx'
 
+const basename = import.meta.env.DEV ? '/' : '/AP_CSA_YHP_Lost_And_Found_Tracker/';
+
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
-        <BrowserRouter>
+        <BrowserRouter basename={basename}>
             <Layout>
                 <Routes>
                     <Route index element={<Signup />} />
