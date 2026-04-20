@@ -20,7 +20,7 @@ function Signup() {
         if (error) {
             alert(error.message);
         } else {
-            alert("Check your email for the confirmation link!");
+            alert("Check your email for the confirmation link");
             console.log("User saved:", data.user);
         }
         setLoading(false);

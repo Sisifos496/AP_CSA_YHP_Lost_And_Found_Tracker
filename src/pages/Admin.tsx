@@ -120,7 +120,7 @@ function Admin() {
                 throw storageError;
             }
 
-            alert('Item marked as found and removed!');
+            alert('Item marked as found and removed');
             fetchItems();
         } catch (error: any) {
             alert('Error removing item: ' + error.message);
@@ -180,7 +180,7 @@ function Admin() {
                 throw dbError;
             }
 
-            alert('Item uploaded successfully!');
+            alert('Item uploaded successfully');
             console.log('Uploaded:', storageData);
             
             // Reset form

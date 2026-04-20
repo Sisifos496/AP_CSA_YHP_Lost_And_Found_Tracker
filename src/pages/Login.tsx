@@ -20,7 +20,7 @@ function Login() {
         if (error) {
             alert(error.message);
         } else {
-            alert("Login successful!");
+            alert("Login successful");
             console.log("Session data:", data.session);
             window.location.href = "/lostfound";
         }

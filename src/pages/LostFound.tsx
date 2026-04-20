@@ -85,7 +85,7 @@ function LostFound() {
 
         } catch (error: any) {
             console.error("Error fetching items:", error.message);
-            alert("Could not load items.");
+            alert("Could not load items");
         } finally {
             setLoading(false);
         }
